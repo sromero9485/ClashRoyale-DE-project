@@ -13,7 +13,7 @@ headers = {"Authorization": f"Bearer {token}"}
 output_file = "clanes_data.json"
 
 # Lista de tags de clanes (ejemplo)
-clan_tags = ["#L9CRC0PG", "#GG0C0VR0", "#P00CUJ2R", "#LC0GJGRV", "#YVQV2VVY", "#9JUP2U", "#RPQ2QGYC"] 
+clan_tags = ["#2PP", "#8YL8Y9L", "#ABC123"]  # Reemplaza con tus tags reales
 
 def get_clan_data(clan_tag):
     endpoint = f"/clans/{clan_tag.replace('#', '%23')}"  # Codificar el # como %23

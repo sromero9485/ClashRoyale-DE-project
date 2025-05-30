@@ -1,6 +1,7 @@
 import requests
 import json 
 from time import sleep, time
+import pandas as pd
 
 with open("token.txt", "r") as file:
     token = file.read().strip('\n')
@@ -55,3 +56,5 @@ def fetch_all_clans_data(tags, output_file):
 
 # Ejecutar y medir tiempo
 fetch_all_clans_data(clan_tags, output_file)
+
+df = pd.read_json(output_file)
